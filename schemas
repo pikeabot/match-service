@@ -1,0 +1,14 @@
+CREATE TABLE players(
+    playerid INTEGER,
+    rank INTEGER,
+    PRIMARY KEY (playerid)
+);
+
+CREATE TABLE match (
+    id INTEGER,
+    game_type VARCHAR(20)
+    players INTEGER[],
+    creation_time TIMESTAMP,
+    winner INTEGER,
+    PRIMARY KEY (id)
+);
