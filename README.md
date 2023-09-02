@@ -1,4 +1,4 @@
-# Tournament and Matchmaking service
+# Simple Serverless Matchmaking service
 Simple matchmaking service using AWS Lambda, SQS and PostgreSQL RDS
 
 Uses SQS queues as 'lobbies' for players. 
