@@ -1,5 +1,5 @@
 # Simple Serverless Matchmaking service
-Simple matchmaking service using AWS Lambda, SQS and PostgreSQL RDS
+Simple matchmaking service using AWS Lambda, SQS and MySQL RDS
 
 Uses SQS queues as 'lobbies' for players. 
 
