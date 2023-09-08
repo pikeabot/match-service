@@ -1,5 +1,6 @@
 # Simple Serverless Matchmaking service
 Simple matchmaking service using AWS Lambda, SQS and MySQL RDS
+Deployed using Terraform
 
 Uses SQS queues as 'lobbies' for players. 
 
@@ -19,3 +20,7 @@ Players will be sorted into different queues based on their rank and skill.
 
 Queues are checked and if there are enough players then a game object and leaderboard
 are created
+
+### SQS Message Format:
+Messages sent to SQS queue will be in the body and have the format: 
+{ playerid: <player id>, timestamp: <current timestamp> }
