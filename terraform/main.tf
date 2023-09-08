@@ -23,3 +23,8 @@ module "iam" {
  source  = "./modules/iam"
 }
 
+# S3 Bucket
+resource "aws_s3_bucket" "match-service-lambda-deploy" {
+   bucket = "match-service-lambda-deploy"
+   acl    = "private"
+}
