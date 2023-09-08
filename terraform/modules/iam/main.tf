@@ -47,4 +47,3 @@ resource "aws_iam_role_policy_attachment" "xray_daemon_write_access" {
   policy_arn = "arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess"
 }
 
-

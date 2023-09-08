@@ -18,9 +18,15 @@ module "vpc" {
  source  = "./modules/vpc"
 }
 
-# IAM Role
+# IAM
 module "iam" {
  source  = "./modules/iam"
+}
+
+# SQS Example Queue
+module "sqs" {
+  source = "./modules/sqs"
+
 }
 
 # S3 Bucket
